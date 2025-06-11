@@ -1,0 +1,81 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #FFC0CB, 	#EE82EE); /* Cor de fundo gradiente */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: sticky; /* Fixa o cabeçalho no topo */
+    top: 0;
+    z-index: 100; /* Garante que o cabeçalho fique acima do conteúdo */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555; /* Muda a cor de fundo ao passar o mouse */
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px; /* Cantos arredondados */
+    transition: transform 0.3s ease; /* Transição para a animação */
+}
+
+section:hover {
+    transform: translateX(10px); /* Translação quando o mouse passa por cima */
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transição para a animação */
+}
+
+section img:hover {
+    transform: scale(1.1); /* Aumenta a imagem quando o mouse passa por cima */
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.redes-sociais a {
+    font-size: 2em;
+    color: #333;
+    margin: 0 0.5em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição para cor e rotação */
+}
+
+.redes-sociais a:hover {
+    color: #007bff; /* Muda a cor ao passar o mouse */
+    transform: rotate(360deg); /* Rotaciona ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
